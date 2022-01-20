@@ -1,4 +1,4 @@
-module.exports = {
+const dragPan = {
     enable(ctx) {
         setTimeout(() => {
             // First check we've got a map and some context.
@@ -14,5 +14,7 @@ module.exports = {
             // Always disable here, as it's necessary in some cases.
             ctx.map.dragPan.disable();
         }, 0);
-    }
+    },
 };
+
+export default dragPan;
